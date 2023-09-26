@@ -10,7 +10,7 @@ function Default_Page() {
     return (
         <Wrapper>
             <img src={info} />
-            <h1 className="p-5 text-6xl text-white1">Default Page</h1>
+            <p className="p-2">Default Page</p>
         </Wrapper>
     )
 }
