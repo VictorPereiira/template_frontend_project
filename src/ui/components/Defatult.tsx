@@ -17,7 +17,7 @@ import { util } from "@utils/index"
 
 // Components
 
-function Home({ func }: any) {
+function Default_Component({ func }: any) {
     //  code logic
 
     return (
@@ -35,4 +35,4 @@ const Wrapper = tw.section`
     h-screen
 `
 
-export default Home;
+export default Default_Component;

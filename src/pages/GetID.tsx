@@ -1,5 +1,6 @@
 import tw from "tailwind-styled-components"
 import Typewriter from 'typewriter-effect';
+import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 // Animation
@@ -18,7 +19,7 @@ import { util } from "@utils/index"
 // Components
 
 function Home({ func }: any) {
-    //  code logic
+    let { component_id } = useParams();
 
     return (
         <Wrapper>
