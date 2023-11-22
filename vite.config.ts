@@ -11,6 +11,7 @@ export default defineConfig({
       '@animations': path.resolve(__dirname, './src/ui/style/animation/'),
       '@icons': path.resolve(__dirname, './src/ui/assets/icons/'),
       '@imgs': path.resolve(__dirname, './src/ui/assets/img/'),
+      '@components': path.resolve(__dirname, './src/ui/components/'),
       '@services': path.resolve(__dirname, './src/data/service/'),
       '@utils': path.resolve(__dirname, './src/data/util/'),
     }

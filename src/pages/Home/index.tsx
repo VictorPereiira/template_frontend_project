@@ -1,38 +1,52 @@
 import tw from "tailwind-styled-components"
-import Typewriter from 'typewriter-effect';
-import { useState, useEffect } from "react";
+import { useEffect, useRef, useState } from "react"
 
-// Animation
-import "@animations/default.css"
+// Styles
+import '@animations/animate-pulse.css'
 
 // Icons
-import icon1 from "@icons/icon1.svg"
 
 // Imgs
-import img1 from "@imgs/img1.png"
-
-// Services & Utils
-import { server } from "@services/index";
-import { util } from "@utils/index"
 
 // Components
 
-function Home({ func }: any) {
-    //  code logic
+// Sections
+
+// Structure
+function Home() {
+    const [mobileMenu, setMobileMenu] = useState(false);
+    const OpenMenu = () => {
+        setMobileMenu(!mobileMenu);
+    };
+
 
     return (
         <Wrapper>
-            {/* content here...*/}
+            <Mobile>
+                {/* content here */}
+            </Mobile>
+            {
+                // mobileMenu && (<MobileMenu func={OpenMenu} />)
+            }
+            {/* Desktop */}
+            <Desktop className="lg:flex flex-col pt-[40px]">
+                {/* content here */}
+            </Desktop>
         </Wrapper >
     )
 }
 
 // Styles
-const Wrapper = tw.section`  
-    flex 
-    flex-col 
-    flex-grow
-    h-screen
+const Wrapper = tw.section`
+    bg-black1
+`
+
+const Mobile = tw.section`
+    lg:hidden
+    px-[20px]
+`
+const Desktop = tw.section`
+    hidden
 `
 
 export default Home;
